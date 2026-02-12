@@ -1,0 +1,335 @@
+body, html {
+  height: 100%;
+  font-family: "Syne Mono", monospace;
+  color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+/* safety first */
+body {
+  min-height: 100dvh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-width: 100dvw;
+  min-width: 100vw;
+  min-height: -webkit-fill-available;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+
+/* our lovely font */
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* remove decoration from links and turn them white */
+a, a:hover, a:active, a:visited { 
+  color: whitesmoke; 
+  text-decoration: none;
+}
+
+
+/* help the footer stay in place */
+footer {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: -3%;
+}
+
+/* star animations to accompany your reading */
+.twinkleStar#gold  {
+  width: 253px; 
+  height: 215px;
+  background-image: url("./media/goldStarchill.gif");
+  background-size: cover;
+  position: fixed;
+  top: 19%;
+  left: 26%;
+  margin-left: 10%;
+}
+
+.twinkleStar#purple {
+  width: 253px; 
+  height: 215px;
+  background-image: url("./media/purpStarchill.gif");
+  background-size: cover;
+  position: fixed;
+  top: 8%;
+  right: 26%;
+  margin-right: 10%;
+}
+
+.twinkleStar#red {
+  width: 253px; 
+  height: 215px;
+  background-image: url("./media/redStarchill.gif");
+  background-size: cover;
+  position: fixed;
+}
+
+/* keep it together! */
+.container {
+  width: 100dvw;
+  width: 100vw;
+  background: #000000;
+  background: radial-gradient(circle,rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100%);
+  height: 90vh;
+  padding-top: 10%;
+  height: 90dvh;
+  display: grid;
+}
+
+/* page blackholes */
+.contentHole {
+  overflow: scroll;
+  padding-top: 12.5%;
+  width: 65vw;
+  width: 65dvw;
+  height: 400px;
+  margin-left: 17%;
+  display: grid;
+  font-size: 1em;
+}
+
+.contentText {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.contentText h3 {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+#mail {
+  display: grid;
+  place-items: center;
+  
+}
+
+.contentText#mailHolder {
+  margin-top: 8vh;
+  margin-top: 8dvh;
+  margin-bottom: 8vh;
+  margin-bottom: 8dvh;
+  margin-right: 20px;
+  margin-left: 80px;
+  font-size: 1.5em;
+}
+
+.return {
+  position: absolute;
+  background: rgba(255, 255, 255, 0);
+  position: relative;
+  font-size: 1.5em;
+  padding-bottom: 10%;
+  padding-left: 30%;
+  margin: auto;
+  position: bottom;
+  transform: rotate(3deg);
+}
+
+.arrowDiv {
+  height: 150px;
+  width: 190px;
+  padding-left: 20vw;
+  padding-left: 20dvw;
+  transform: rotate(-4deg);
+  position: fixed;
+  font-size: 0.8em;
+}
+
+@keyframes bouncing {
+  0% {bottom: 0;}
+  50% {bottom: 20px;}
+  100% {bottom: 0;}
+}
+
+
+.arrow {
+  animation: bouncing 1s infinite ease-in-out;
+  height: 80.64px;
+  width: 39.69px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  padding-left: 8%;
+  padding-top: 20%;
+}
+
+
+/* biiig landscape desktop/handheld portrait */
+@media (min-width: 1300px) {
+  .bg {
+    background-image: url("./media/GrinandDandy_Web-Page.jpg");
+    min-width: 100vw;
+    min-width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  footer {
+    margin-top: 5%;
+  }
+
+  .container {
+    width: 100dvw;
+    width: 100vw;
+    background: #000000;
+    background: radial-gradient(circle,rgba(0, 0, 0, 1) 28%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100%);
+    height: 90vh;
+    height: 90dvh;
+    padding-top: 5%;
+    display: grid;
+  }
+
+  .contentHole {
+    overflow: scroll;
+    padding-top: 9%;
+    width: 65vw;
+    width: 65dvw;
+    height: 40vh;
+    height: 40dvh;
+    margin-left: 17%;
+    display: grid;
+    font-size: 1em;
+  }
+
+  .contentText {
+    height: 300px;
+    margin-top: 15vh;
+    margin-top: 15dvh;
+    margin-right: 32%;
+    margin-left: 32%;
+  }
+  .contentText#mailHolder {
+    padding-top: 15vh;
+    padding-top: 15dvh;
+    padding-bottom: -10%;
+  }
+  .return {
+    padding-top: 9%;
+  }
+
+  .twinkleStar#gold  {
+    width: 253px; 
+    height: 215px;
+    background-image: url("./media/goldStarchill.gif");
+    background-size: cover;
+    position: fixed;
+    top: 19%;
+    left: 12%;
+    margin-left: 10%;
+  }
+
+  .twinkleStar#purple {
+    width: 253px; 
+    height: 215px;
+    background-image: url("./media/purpStarchill.gif");
+    background-size: cover;
+    position: fixed;
+    top: 4%;
+    right: 14%;
+    margin-right: 10%;
+  }
+  
+}
+
+/* squarish desktop windows, an iPad mini */
+@media (max-width: 1300px){
+  .bg {
+    background-image:  url("./media/GrinandDandy_Web-Page.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 180%;
+  }
+  footer {
+    margin-top: 5%;
+  }
+  .container {
+    width: 100dvw;
+    width: 100vw;
+    background: #000000;
+    background: radial-gradient(circle,rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    height: 90vh;
+    height: 90dvh;
+    padding-top: 10%;
+    display: grid;
+  }
+  .contentHole {
+    overflow: scroll;
+    padding-top: 19%;
+    width: 70vw;
+    width: 70dvw;
+    height: 400px;
+    display: grid;
+    font-size: 1em;
+  }
+  .contentText {
+    padding-top: 10%;
+    margin-left: 30%;
+    margin-right: 35%;
+  }
+  .return {
+    padding-top: 0%;
+    padding-bottom: 5%;
+  }
+}
+
+/* vertical windows and mobiles in portrait */
+@media (max-width: 750px) {
+  .bg {
+    background-image: url("./media/GrinandDandy_Screen-Page.jpg");
+    min-width: 100vw;
+    min-width: 100dvw;
+    height: 100%;
+    background-attachment: scroll;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    width: 100dvw;
+    width: 100vw;
+    background: #000000;
+    background: radial-gradient(circle,rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+    height: 90vh;
+    height: 90dvh;
+    padding-top: 10%;
+    display: grid;
+  }
+  .contentHole {
+    overflow: scroll;
+    padding-top: 20%;
+    width: 90vw;
+    width: 90dvw;
+    height: 50vh;
+    height: 50dvh;
+    display: grid;
+    font-size: 1em;
+  }
+  .contentText {
+    padding-top: 15vh;
+    padding-top: 15dvh;
+    margin-left: 10%;
+    margin-right: 33%;
+  }
+  .return {
+    padding-top: 0%;
+  }
+  .twinkleStar {
+    width:  189.75px; 
+    height: 161.25px;
+  }
+}
+

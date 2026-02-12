@@ -1,0 +1,280 @@
+body, html {
+  height: 100%;
+  font-family: "Syne Mono", monospace;
+  color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+/* safety first */
+body {
+  min-height: 100dvh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-width: 100dvw;
+  min-width: 100vw;
+  min-height: -webkit-fill-available;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* handle cursors for hover over unclickable text */
+.submenu:hover {
+  cursor: pointer;
+}
+
+.title:hover {
+  cursor: default;
+}
+
+/* our lovely font */
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* handle the handrawn ampersand in the subtitle */
+.ampers {
+  height: 1em;
+  vertical-align: bottom;
+  display: inline-grid;
+  padding-left: 6px;
+  padding-bottom: 3px;
+}
+
+/* remove decoration from links and turn them white */
+a, a:hover, a:active, a:visited { 
+  color: whitesmoke; 
+  text-decoration: none;
+}
+
+
+/* help the footer stay in place */
+footer {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  font-size: 0.8em;
+  margin-top: 10%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* star animation with hover FX */
+.superStar {
+  width: 253px; 
+  height: 215px;
+  background-image: url("./media/starSlow.gif");
+  background-size: cover;
+  position: fixed;
+  bottom: 30%;
+  right: 20%;
+}
+
+.superStar:hover {
+  background-image: url("./media/starFast.gif"); 
+  transition: background-image 0.3s ease;
+}
+
+
+/* keep it together! */
+.container {
+  width: 100dvw;
+  width: 100vw;
+  display: grid;
+}
+
+.arrowDiv {
+  width: 100dvw;
+  width: 100vw;
+  height: 200px;
+  position: relative;
+}
+
+.arrowDiv p {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+@keyframes bouncing {
+  0% {bottom: 0;}
+  50% {bottom: 20px;}
+  100% {bottom: 0;}
+}
+
+.arrow {
+  animation: bouncing 1s infinite ease-in-out;
+  bottom: 0;
+  height: 101.64px;
+  width: 39.69px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  padding-left: 46dvw;
+  padding-left: 46vw;
+  opacity: 0;
+}
+
+/* biiig landscape desktop/handheld portrait */
+@media (min-width: 1080px) {
+  .arrowDiv {
+    visibility: hidden;
+  }
+  .bg {
+    background-image: url("./media/GrinandDandy_Web-Main.jpg");
+    min-width: 100vw;
+    min-width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .title {
+    position: relative;
+    display: inline-block;
+    padding: 3%;
+    width: 36vw;
+    height: 100%;
+  }
+  .subtitle {
+    padding-top: 3%;
+  }
+  .subtitle p {
+    font-size: 2.5vh;
+    font-size: 2.5dvh;
+    margin-bottom: -1em; 
+    margin-top: 1em;
+  } 
+  .menu {
+    font-size: 3vh;
+    font-size: 3dvh;
+    position: absolute;
+    display: inline-block;
+    padding-top: 5%;
+    padding-right: 6%;
+    right: 0;
+  }
+  .submenu {
+    font-size: 0.8em;
+    padding-top: 5%;
+  }
+
+}
+
+/* squarish desktop windows, an iPad */
+@media (max-width: 1080px){
+  .arrowDiv {
+    width: 0;
+    height: 0;
+  }
+  .superStar {
+    bottom: 60%;
+  }
+  .bg {
+    background-image: url("./media/GrinandDandy_Web-Main.jpg");
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 160%;
+  }
+  .title {
+    position: absolute;
+    left: 50%;
+    padding-top: 55%;
+    transform: translate(-50%, -50%);
+    height: 38dvh;
+    height: 38vh;
+    width: 42.5%
+  }
+  .subtitle {
+    width:70%;
+    padding-top: 10%;
+    padding-left: 96%;
+    font-size: 1em;
+    transform: rotate(3deg);
+  }
+  .subtitle p {
+    font-size: 1.3em;
+    margin-bottom: -1em; 
+    margin-top: 1em;
+  } 
+  .menu {
+    font-size: 1.75em;
+    position: relative;
+    padding-left: 20%;
+    padding-top: 70%;
+    text-align: left;
+  }
+  .menu p {
+    padding-top: 3%;
+  }
+  .submenu {
+    font-size: 0.8em;
+    padding-top: 5%;
+  }
+  footer {
+    margin-top: 3%;
+  }
+}
+
+/* vertical windows and mobiles in portrait */
+@media (max-width: 750px) {
+  .arrow {
+    opacity: 100;
+  }
+
+  .superStar {
+    bottom: 55%;
+  }
+  .arrowDiv {
+    width: 100dvw;
+    width: 100vw;
+    height: 200px;
+    position: relative;
+  }
+  .bg {
+    background-image: url("./media/GrinandDandy_Screen-Main2.jpg");
+    min-width: 100vw;
+    min-width: 100dvw;
+    height: 100%;
+    background-attachment: scroll;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .title {
+    position: relative;
+    top: 65%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 100%;
+  }
+  .subtitle {
+    padding-top: 80%;
+    padding-left: 70%;
+    font-size: 0.8em;
+    transform: rotate(3deg);
+  }
+  .subtitle p {
+    font-size: 1.3em;
+    margin-bottom: -1em; 
+    margin-top: 1em;
+  } 
+  .menu {
+    position: relative;
+    padding-left: 12%;
+    padding-top: 38%;
+    text-align: left;
+  }
+  .menu p {
+    padding-top: 10%;
+  }
+  .submenu {
+    font-size: 0.8em;
+    padding-top: 40%;
+    padding-bottom: 25%;
+  }
+}
+
