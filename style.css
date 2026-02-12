@@ -220,9 +220,6 @@ footer {
 
 /* vertical windows and mobiles in portrait */
 @media (max-width: 750px) {
-  body {
-    overflow-x: hidden;
-  }
   .arrow {
     opacity: 100;
   }
@@ -257,7 +254,7 @@ footer {
   }
   .subtitle {
     padding-top: 80%;
-    padding-left: 70%;
+    padding-left: 60%;
     font-size: 0.8em;
     transform: rotate(3deg);
   }
@@ -284,9 +281,6 @@ footer {
 
 /* most mobiles in portrait */
 @media (max-width: 576px) {
-  body {
-    overflow-x: hidden;
-  }
   .arrow {
     opacity: 100;
   }
@@ -308,7 +302,7 @@ footer {
     background-attachment: scroll;
     background-position: top;
     background-repeat: repeat-y;
-    background-size: cover 110%;
+    background-size: cover;
   }
   .title {
     position: relative;
@@ -317,12 +311,12 @@ footer {
     transform: translate(-50%, -50%);
     width: 60vw;
     width: 60dvw;
-    padding-top: 350px;
+    padding-top: 200px;
     height: 100%;
   }
   .subtitle {
     padding-top: 80%;
-    padding-left: 70%;
+    padding-left: 65%;
     font-size: 0.8em;
     transform: rotate(3deg);
   }
