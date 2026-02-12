@@ -168,7 +168,7 @@ footer {
 /* biiig landscape desktop/handheld portrait */
 @media (min-width: 1300px) {
   .bg {
-    background-image: url("./media/GrinandDandy_Web-Page.jpg");
+    background-image: url("./media/GrinandDandy_Web-Page.webp");
     min-width: 100vw;
     min-width: 100dvw;
     height: 100vh;
@@ -247,7 +247,7 @@ footer {
 /* squarish desktop windows, an iPad mini */
 @media (max-width: 1300px){
   .bg {
-    background-image:  url("./media/GrinandDandy_Web-Page.jpg");
+    background-image:  url("./media/GrinandDandy_Web-Page.webp");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@ footer {
 /* vertical windows and mobiles in portrait */
 @media (max-width: 750px) {
   .bg {
-    background-image: url("./media/GrinandDandy_Screen-Page.jpg");
+    background-image: url("./media/GrinandDandy_Screen-Page.webp");
     min-width: 100vw;
     min-width: 100dvw;
     height: 100%;

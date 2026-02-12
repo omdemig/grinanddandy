@@ -121,7 +121,7 @@ footer {
     visibility: hidden;
   }
   .bg {
-    background-image: url("./media/GrinandDandy_Web-Main.jpg");
+    background-image: url("./media/GrinandDandy_Web-Main.webp");
     min-width: 100vw;
     min-width: 100dvw;
     height: 100vh;
@@ -172,7 +172,7 @@ footer {
     bottom: 60%;
   }
   .bg {
-    background-image: url("./media/GrinandDandy_Web-Main.jpg");
+    background-image: url("./media/GrinandDandy_Web-Main.webp");
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -234,7 +234,7 @@ footer {
     position: relative;
   }
   .bg {
-    background-image: url("./media/GrinandDandy_Screen-Main2.jpg");
+    background-image: url("./media/GrinandDandy_Screen-Main2.webp");
     min-width: 100vw;
     min-width: 100dvw;
     height: 100%;
