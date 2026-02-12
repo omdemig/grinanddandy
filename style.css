@@ -253,6 +253,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 60vw;
     height: 100%;
+    padding-top: 350px;
   }
   .subtitle {
     padding-top: 80%;
@@ -311,12 +312,12 @@ footer {
   }
   .title {
     position: relative;
-    padding-top: 250px;
     top: 65%;
     left: 48.5%;
     transform: translate(-50%, -50%);
     width: 60vw;
     width: 60dvw;
+    padding-top: 350px;
     height: 100%;
   }
   .subtitle {
