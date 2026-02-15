@@ -331,9 +331,24 @@ footer {
   .return {
     padding-top: 0%;
   }
-  .twinkleStar {
-    width:  189.75px; 
-    height: 161.25px;
+  .twinkleStar#gold {
+    width:  151.8px; 
+    height: 129px;
+  }
+  .twinkleStar#purple {
+    width:  151.8px; 
+    height: 129px;
+  }
+  .contentText#mailHolder {
+    margin-top: 8vh;
+    margin-top: 8dvh;
+    margin-bottom: 8vh;
+    margin-bottom: 8dvh;
+    margin-right: 20px;
+    margin-left: 60px;
+    font-size: 1em;
+    max-width: 100vw;
+    max-width: 100dvw;
   }
 }
 
