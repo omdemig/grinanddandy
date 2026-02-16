@@ -320,13 +320,16 @@ footer {
     height: 50vh;
     height: 50dvh;
     display: grid;
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .contentText {
     padding-top: 15vh;
     padding-top: 15dvh;
     margin-left: 10%;
     margin-right: 33%;
+  }
+  .contentText h1 {
+    font-size: 1.2em;
   }
   .return {
     padding-top: 0%;
@@ -338,6 +341,11 @@ footer {
   .twinkleStar#purple {
     width:  151.8px; 
     height: 129px;
+  }
+  .twinkleStar#red {
+    width:  151.8px; 
+    height: 129px;
+    margin-top: 25px;
   }
   .contentText#mailHolder {
     margin-top: 8vh;
