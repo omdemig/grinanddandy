@@ -74,6 +74,106 @@ footer {
   position: fixed;
 }
 
+.artTitle {
+  color: black;
+  min-width: 100dvw;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+#ender {
+  color: rgb(255, 0, 106);
+  font-size: smaller;
+}
+
+details {
+  margin: 30px;
+}
+
+.why {
+  margin: 30px;
+}
+
+.buttonFirst {
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.buttonAfter {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+
+details>summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+#sum1::after {
+  content: ' ► [yeah?]';
+  color: blue;
+}
+
+#sum2::after {
+  content: ' ► [yeah?]';
+  color: blue;
+}
+
+#sum3::after {
+  content: ' ► [yeah?]';
+  color: blue;
+}
+
+#deets1[open] #sum1:after {
+  content: " ✷";
+  color: blue;
+}
+
+#deets2[open] #sum2:after {
+  content: " ✷ ";
+  color: blue;
+}
+
+#deets3[open] summary:after {
+  content: " ✷";
+  color: blue;
+}
+
+
+.button {
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: smaller;
+ overflow: hidden;
+ color: ghostwhite;
+}
+
+.button#bud1 {
+ background: #0004ff;
+}
+
+.button#bud2 {
+ background: #ff00e1;
+}
+
+.button#bud3 {
+ background: #000000;
+}
+
+
 /* keep it together! */
 .container {
   width: 100dvw;
